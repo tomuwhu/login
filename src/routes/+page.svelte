@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    export let data
+</script>
+{#if data.c_user}
+    <h1>Bejelentkezve</h1>
+    {data.s_name} ({data.c_user})
+    <form method="POST" action="/api?/logout">
+        <br><br>
+        <button>Logout</button>
+    </form>
+{:else}
+    <form method="POST" action="/api?/login">
+        <label for="un">Felhasználónév</label>
+        <input type="text" name="username" id="un">
+        <br>
+        <label for="pw">Jelszó</label>
+        <input type="password" name="password" id="pw">
+        <button>Login</button>
+    </form>
+{/if}
