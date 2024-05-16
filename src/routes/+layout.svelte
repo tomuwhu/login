@@ -30,6 +30,9 @@
         padding: 10px;
         margin: 10px;
         border: solid 2px red;
+        border-radius: 10px;
+        background-color: lightgray;
+        color: rgb(29, 69, 101);
         text-align: center;
     }
 </style>

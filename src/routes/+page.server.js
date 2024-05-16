@@ -1,6 +1,5 @@
-export function load({ locals }) {
+export function load({ cookies }) {
   return {
-    user: locals.user,
-    name: locals.name
+    c_user: cookies.get('username')
   }       
 }

@@ -3,7 +3,7 @@
 </script>
 {#if data.c_user}
     <h1>Bejelentkezve</h1>
-    {data.s_name} ({data.c_user})
+    {data.c_user}
     <form method="POST" action="/api?/logout">
         <br><br>
         <button>Logout</button>
