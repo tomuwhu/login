@@ -4,8 +4,8 @@
 </script>
 <div class="menu">
     {#if c_user}
+    <a href="/content">Titkos tartalom</a>
     <a href="/">Logout</a>
-    <a href="/content">Tartalom</a>
     {:else}
     <a href="/">Login</a>
     {/if}
