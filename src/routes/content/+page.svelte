@@ -8,6 +8,8 @@
 Titkos tartalom:
 <br>
 {data.titkos_tartalom}
+<hr>
+{data.gc}
 {:else}
 Tartalom nem hozzáférhető
 {/if}
