@@ -1,5 +1,5 @@
 import Database from 'better-sqlite3'
-const db = new Database('mydb.db', { verbose: console.log })
+const db = new Database('mydb.db')
 export const actions = {
 	login: async ({ request, cookies }) => {
         const data = await request.formData()
