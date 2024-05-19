@@ -14,5 +14,7 @@ export const actions = {
 }
 
 export async function load({ cookies }) {
-	return { c_user: cookies.get('username') }
+    var un = cookies.get('username')
+    const res = db.prepare('SELECT * FROM users WHERE email = ?').get(un)
+	return { c_user: un, name: res?.name }
 }
