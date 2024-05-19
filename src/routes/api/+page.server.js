@@ -6,8 +6,10 @@ export const actions = {
         var un = data.get('username')
         var pw = data.get('password')
         const res = db.prepare('SELECT * FROM users WHERE email = ? and password_hash = ?').get(un, pw)
-        if (res?.email) cookies.set('username', res.email, { path: '/' })
-        return { success: true }
+        if (res?.email) {
+            cookies.set('username', res.email, { path: '/' })
+            return { success: true }
+        }
     },
     logout: async ({ cookies }) => {
         cookies.delete('username', { path: '/' })
