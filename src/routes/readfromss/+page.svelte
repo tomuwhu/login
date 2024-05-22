@@ -20,7 +20,7 @@
     }
 </script>
 <h1>Google táblázat megjelenítése</h1>
-<a href="http://docs.google.com/spreadsheets/d/1t-fzy8ZfbPG2_i304zQTnRG28TMtVoAqSRt4fjRkOBM" target="_blank">Táblázat</a>
+<a href=http://docs.google.com/spreadsheets/d/{spreadsheetId} target=_blank>Táblázat</a>
 <hr>
 <table>
 {#each ss as row}
