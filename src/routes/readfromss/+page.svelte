@@ -26,9 +26,9 @@
 {#each ss as row}
     <tr>
         <td>{mf.fx(row.Kezdete)}</td>
-        <td>{row.Verseny}</td>
-        <td>{row.Város}</td>
-        <td>{row.Helyszín}</td>
+        <td>{row.Verseny || '---'}</td>
+        <td>{row.Város || '---'}</td>
+        <td>{row.Helyszín || '---'}</td>
     </tr>
 {:else}
     Nincs adat
@@ -38,11 +38,18 @@
 <style>
     table {
         margin: auto;
+        border-spacing: 4px;
+        box-shadow: 1px 1px 3px black;
+        background-color: rgb(46, 96, 114);
+        padding: 2px;
+        border-radius: 10px;
     }
     td {
         padding: 5px;
         padding-left: 20px;
         padding-right: 20px;
         background-color: aliceblue;
+        border-radius: 6px;
+        box-shadow: 1px 1px 3px inset black;
     }
 </style>
