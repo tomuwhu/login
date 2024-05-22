@@ -1,7 +1,7 @@
 <script>
     export let data
 </script>
-{#if data.c_user}
+{#if data?.c_user}
     <h1>Bejelentkezve</h1>
     {data.name}
     ({data.c_user})

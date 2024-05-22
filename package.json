@@ -24,6 +24,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"better-sqlite3": "^10.0.0"
+		"better-sqlite3": "^10.0.0",
+		"public-google-sheets-parser": "^1.5.4"
 	}
 }
