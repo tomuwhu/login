@@ -4,7 +4,7 @@
 </script>
 <div class="menu">
     {#if c_user}
-    <a href="/content">Titkos tartalom</a>
+    <a href="/content">Felhasználók listája</a>
     <a href="/">Logout</a>
     {:else}
     <a href="/">Login</a>
